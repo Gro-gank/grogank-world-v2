@@ -85,6 +85,7 @@ export default {
     width: 90%;
     background-color: var(--black);
     border: 1px solid #fff;
+    padding: 0.5rem;
   }
 }
 </style>
