@@ -18,7 +18,7 @@
           <p>{{ item.comment }}</p>
         </div>
       </div>
-      <div class="rate-form md:w-[30%] sm:w-full ml-[2rem] sticky top-[10rem]">
+      <div class="rate-form md:w-[30%] sm:w-full md:ml-[2rem]">
         <h4>Add your review</h4>
         <form action="submit" @submit.prevent="hanleSubmit" class="grid">
           <label for="rate"
