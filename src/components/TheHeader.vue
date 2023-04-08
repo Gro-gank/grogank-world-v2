@@ -67,7 +67,7 @@
       <li v-if="user[0]">
         <router-link to="/account/{{profile}}">Account</router-link>
       </li>
-      <li v-else>Log In</li>
+      <li v-else><router-link to="/login"> Log In</router-link></li>
       <li><router-link to="/browse">Discover Store</router-link></li>
       <li>About Us</li>
       <li v-if="user[0]" @click="handleLogout">Log Out</li>
