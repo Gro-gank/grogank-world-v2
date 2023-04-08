@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import Login from "../views/LoginView.vue";
+import Signup from "../views/SignupView.vue";
+import ItemDetail from "../views/ItemDetail.vue";
+import BrowseView from "../views/BrowseView.vue";
+import PaymentView from "../views/PaymentView.vue";
+import ProfileView from "../views/ProfileView.vue";
 
 const routes = [
   {
@@ -8,19 +14,46 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/login",
+    name: "LogIn",
+    component: Login,
+  },
+  {
+    path: "/signup",
+    name: "Signup",
+    component: Signup,
+  },
+  {
+    path: "/detail/:itemId",
+    name: "ItemDetail",
+    component: ItemDetail,
+  },
+  {
+    path: "/browse",
+    name: "BrowseView",
+    component: BrowseView,
+  },
+  {
+    path: "/payment/:id",
+    name: "PaymentView",
+    component: PaymentView,
+  },
+  {
+    path: "/account",
+    name: "ProfileView",
+    component: ProfileView,
   },
 ];
 
 const router = createRouter({
+  mode: "history",
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  linkActiveClass: "active",
+  scrollBehavior() {
+    // return desired position
+    return { top: 0 };
+  },
 });
 
 export default router;
