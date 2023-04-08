@@ -59,6 +59,7 @@
 import { computed, reactive, toRefs } from "vue";
 import { useStore } from "vuex";
 import { useRouter } from "vue-router";
+import Swal from "sweetalert2";
 export default {
   props: {
     commentList: {
@@ -99,7 +100,12 @@ export default {
         });
         // store.dispatch("review/getItemReviewAction", item.value.itemId);
       } catch (err) {
-        alert("You should Sign in to continue");
+        Swal.fire({
+          title: "Warning!!",
+          text: "You should Login to continue.",
+          icon: "warning",
+          confirmButtonText: "ok",
+        });
       }
     };
     return {
