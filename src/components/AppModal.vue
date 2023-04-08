@@ -4,7 +4,7 @@
     v-if="isOpenModal"
   >
     <div
-      class="modal-box relative slg:w-[70%] sm:w-full h-fit bg-[#2a2a2a] sm:mt-[3rem] rounded-lg"
+      class="modal-box relative slg:w-[70%] sm:w-full h-fit bg-[#2a2a2a] mt-[3rem] rounded-lg"
     >
       <div class="modal-header w-full flex justify-between">
         <h2 class="text-[1.5rem]">Edit</h2>
