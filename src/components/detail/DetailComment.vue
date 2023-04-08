@@ -4,7 +4,7 @@
       Review
     </h1>
     <div class="w-full md:flex sm:grid">
-      <div class="comment-list w-[70%] my-[2rem]">
+      <div class="comment-list md:w-[70%] sm:w-full my-[2rem]">
         <div
           v-for="(item, index) in commentList"
           :key="index"
@@ -18,7 +18,7 @@
           <p>{{ item.comment }}</p>
         </div>
       </div>
-      <div class="rate-form w-[30%] ml-[2rem] sticky top-[10rem]">
+      <div class="rate-form md:w-[30%] sm:w-full ml-[2rem] sticky top-[10rem]">
         <h4>Add your review</h4>
         <form action="submit" @submit.prevent="hanleSubmit" class="grid">
           <label for="rate"
