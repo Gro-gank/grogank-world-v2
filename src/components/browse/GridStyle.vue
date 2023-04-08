@@ -6,7 +6,7 @@
       <router-link
         :to="`/detail/${slotProps.item.itemId}`"
         class="item h-fit p-2"
-        @click="viewCount(item)"
+        @click="viewCount(slotProps.item)"
       >
         <img
           :src="slotProps.item.imageTitle"

@@ -5,7 +5,7 @@
         <router-link
           :to="`/detail/${slotProps.item.itemId}`"
           class="md:flex sm:grid sm:border md:border-none"
-          @click="viewCount(item)"
+          @click="viewCount(slotProps.item)"
         >
           <img
             :src="slotProps.item.imageSpan"
