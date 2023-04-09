@@ -9,6 +9,7 @@
           class="nosubmit rounded-3xl bg-[#2a2a2a] p-2 pl-10 text-base md:block sm:hidden"
           placeholder="Search store"
           v-model="keyword"
+          ref="input"
         />
         <ion-icon
           name="search-outline"
@@ -18,7 +19,7 @@
       </div>
       <div
         class="search-list absolute top-[4.5rem] bg-[#2a2a2a] w-[20rem] z-40 md:block sm:hidden"
-        v-if="itemList.length > 0 && keyword"
+        v-if="itemList.length > 0 && keyword && input.focus"
       >
         <ul class="grid gap-5">
           <li v-for="(item, index) in itemList.slice(0, 3)" :key="index">
@@ -100,6 +101,7 @@ export default {
     const store = useStore();
     const userPersonal = computed(() => store.state.user.userPersonal);
     const keyword = ref();
+    const input = ref();
     watch(keyword, (newValue) => {
       store.dispatch("items/getItembySearchAction", newValue);
     });
@@ -119,6 +121,7 @@ export default {
       userPersonal,
       keyword,
       itemList,
+      input,
     };
   },
 };
