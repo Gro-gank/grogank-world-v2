@@ -21,12 +21,11 @@
         v-if="itemList.length > 0 && keyword"
       >
         <ul class="grid gap-5">
-          <li
-            v-for="(item, index) in itemList.slice(0, 3)"
-            :key="index"
-            class="flex gap-2 items-center"
-          >
-            <router-link :to="`/detail/&{item.itemId}`">
+          <li v-for="(item, index) in itemList.slice(0, 3)" :key="index">
+            <router-link
+              :to="`/detail/&{item.itemId}`"
+              class="flex gap-2 items-center"
+            >
               <img :src="item.imageSpan" class="w-[6rem] h-[4rem]" alt="" />
               <div>
                 <p>{{ item.name }}</p>
