@@ -26,10 +26,12 @@
             :key="index"
             class="flex gap-2 items-center"
           >
-            <img :src="item.imageSpan" class="w-[6rem] h-[4rem]" alt="" />
-            <div>
-              <p>{{ item.name }}</p>
-            </div>
+            <router-link :to="`/detail/&{item.itemId}`">
+              <img :src="item.imageSpan" class="w-[6rem] h-[4rem]" alt="" />
+              <div>
+                <p>{{ item.name }}</p>
+              </div>
+            </router-link>
           </li>
           <li v-if="itemList.length > 3">More ...</li>
         </ul>
