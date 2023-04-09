@@ -6,6 +6,7 @@ import ItemDetail from "../views/ItemDetail.vue";
 import BrowseView from "../views/BrowseView.vue";
 import PaymentView from "../views/PaymentView.vue";
 import ProfileView from "../views/ProfileView.vue";
+import AboutView from "../views/AboutView.vue";
 
 const routes = [
   {
@@ -42,6 +43,11 @@ const routes = [
     path: "/account",
     name: "ProfileView",
     component: ProfileView,
+  },
+  {
+    path: "/about",
+    name: "AboutView",
+    component: AboutView,
   },
 ];
 
