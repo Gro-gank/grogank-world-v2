@@ -1,5 +1,7 @@
 <template>
-  <div class="h-fit sticky top-[13rem] w-full px-2 border-[1px] md:ml-[2rem]">
+  <div
+    class="h-fit sticky top-[13rem] w-full px-2 border-t border-b border-[1px] md:ml-[2rem]"
+  >
     <div class="flex justify-between">
       <p class="text-[1.5rem]">Filter</p>
       <p class="cursor-pointer" @click="handleResetFilter">Reset</p>
