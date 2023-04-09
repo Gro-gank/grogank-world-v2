@@ -23,7 +23,7 @@
         <ul class="grid gap-5">
           <li v-for="(item, index) in itemList.slice(0, 3)" :key="index">
             <router-link
-              :to="`/detail/&{item.itemId}`"
+              :to="`/detail/${item.itemId}`"
               class="flex gap-2 items-center"
             >
               <img :src="item.imageSpan" class="w-[6rem] h-[4rem]" alt="" />
