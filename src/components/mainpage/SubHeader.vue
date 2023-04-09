@@ -19,7 +19,7 @@
       </div>
       <div
         class="search-list absolute top-[4.5rem] bg-[#2a2a2a] w-[20rem] z-40 md:block sm:hidden"
-        v-if="itemList.length > 0 && keyword && input.focus"
+        v-if="itemList.length > 0 && keyword"
       >
         <ul class="grid gap-5">
           <li v-for="(item, index) in itemList.slice(0, 3)" :key="index">
@@ -78,15 +78,16 @@
       class="bg-[#2a2a2a] grid gap-2 text-left mt-2"
       v-if="itemList.length > 0 && keyword"
     >
-      <li
-        v-for="(item, index) in itemList.slice(0, 3)"
-        :key="index"
-        class="flex gap-3 items-center"
-      >
-        <img :src="item.imageSpan" class="w-[9rem] h-[6rem]" alt="" />
-        <div>
-          <p>{{ item.name }}</p>
-        </div>
+      <li v-for="(item, index) in itemList.slice(0, 3)" :key="index">
+        <router-link
+          :to="`/detail/${item.itemId}`"
+          class="flex gap-3 items-center"
+        >
+          <img :src="item.imageSpan" class="w-[9rem] h-[6rem]" alt="" />
+          <div>
+            <p>{{ item.name }}</p>
+          </div>
+        </router-link>
       </li>
       <li v-if="itemList.length > 3">More ...</li>
     </ul>
@@ -101,7 +102,8 @@ export default {
     const store = useStore();
     const userPersonal = computed(() => store.state.user.userPersonal);
     const keyword = ref();
-    const input = ref();
+    const input = ref(null);
+
     watch(keyword, (newValue) => {
       store.dispatch("items/getItembySearchAction", newValue);
     });
@@ -137,9 +139,9 @@ export default {
       &:focus {
         outline: none;
       }
-      &::-webkit-search-cancel-button {
-        -webkit-appearance: none;
-      }
+      // &::-webkit-search-cancel-button {
+      //   -webkit-appearance: none;
+      // }
     }
   }
   input.nosubmit {
