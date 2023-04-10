@@ -83,11 +83,11 @@ export default {
       }
     };
     const handlePay = () => {
-      try {
-        const user = computed(() => store.state.user.user);
-        user;
+      const user = computed(() => store.state.user.user);
+      if (user.value[0]) {
+        console.log(user.value);
         router.push(`/payment/${item.value.itemId}`);
-      } catch (error) {
+      } else {
         Swal.fire({
           icon: "warning",
           title: "You should Login to continue!",

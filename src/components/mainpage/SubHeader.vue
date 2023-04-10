@@ -26,6 +26,7 @@
             <router-link
               :to="`/detail/${item.itemId}`"
               class="flex gap-2 items-center"
+              @click="handleGotoDetail"
             >
               <img :src="item.imageSpan" class="w-[6rem] h-[4rem]" alt="" />
               <div>
@@ -82,6 +83,7 @@
         <router-link
           :to="`/detail/${item.itemId}`"
           class="flex gap-3 items-center"
+          @click="handleGotoDetail"
         >
           <img :src="item.imageSpan" class="w-[9rem] h-[6rem]" alt="" />
           <div>
@@ -116,6 +118,9 @@ export default {
       isOpenSearchForm.value = false;
       keyword.value = null;
     };
+    const handleGotoDetail = () => {
+      keyword.value = "";
+    };
     return {
       isOpenSearchForm,
       handleOpenSearchForm,
@@ -124,6 +129,7 @@ export default {
       keyword,
       itemList,
       input,
+      handleGotoDetail,
     };
   },
 };
