@@ -45,7 +45,6 @@
     </div>
     <div class="flex items-center">
       <ul class="flex md:gap-8 sm:gap-2">
-        <li><router-link to="/">Wishlist</router-link></li>
         <li class="flex">
           <router-link to="/">Cart</router-link>
           <div class="ml-1 px-1 bg-opacity-50 text-main text-black rounded-lg">
