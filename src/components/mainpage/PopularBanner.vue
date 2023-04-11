@@ -45,17 +45,17 @@
               <div
                 class="absolute left-0 bottom-0 text-center w-full md:hidden mb-8"
               >
-                <h2 class="font-bold text-yellow-600 text-[1.5rem]">
+                <h2 class="font-bold text-[1.5rem]">
                   {{ item.name }}
                 </h2>
                 <p>{{ item.developer }}</p>
                 <p>{{ item.price }} $</p>
               </div>
               <div
-                class="md:absolute md:bottom-0 md:left-0 md:block sm:hidden md:w-[40%] my-11 mx-3 bg-[gray] bg-opacity-20 p-3"
+                class="text-[black] md:absolute md:bottom-0 md:left-0 md:block sm:hidden md:w-[40%] my-11 mx-3 bg-[gray] bg-opacity-30 p-3"
               >
                 <div>
-                  <h2 class="font-bold text-yellow-600 text-[2rem]">
+                  <h2 class="font-bold text-[2rem]">
                     {{ item.name }}
                   </h2>
                   <p>{{ item.developer }}</p>
