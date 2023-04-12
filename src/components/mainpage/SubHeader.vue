@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sub-header sticky top-0 mx-auto lg:px-[12%] slg:px-[7%] md:px-[5%] sm:px-[2rem] py-5 flex justify-between z-10"
+    class="sub-header sticky top-0 mx-auto lg:px-[12%] slg:px-[7%] md:px-[5%] sm:px-[2rem] py-5 flex justify-between z-[40]"
   >
     <div class="flex gap-8 md:w-[50%] items-center">
       <div class="search-form">
