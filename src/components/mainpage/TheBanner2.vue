@@ -82,8 +82,7 @@ export default {
 img#moon {
   mix-blend-mode: screen;
 }
-img#mountains_behind {
-}
+
 img#mountains_front {
   z-index: 10;
 }
