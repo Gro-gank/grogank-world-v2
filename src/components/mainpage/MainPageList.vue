@@ -7,7 +7,9 @@
         class="title md:text-left md:ml-[2rem] text-[1.5rem] mb-[1rem] flex justify-between pr-[2rem]"
       >
         <p>Top View</p>
-        <div class="normal-btn">More</div>
+        <div class="normal-btn">
+          <router-link to="/browse">More</router-link>
+        </div>
       </div>
       <ul class="p-5">
         <li v-for="(item, index) in listbyView.slice(0, 8)" :key="index">
@@ -31,7 +33,9 @@
         class="title md:text-left md:ml-[2rem] text-[1.5rem] mb-[2rem] flex justify-between pr-[2rem]"
       >
         <p>Top Rate</p>
-        <div class="normal-btn">More</div>
+        <div class="normal-btn">
+          <router-link to="/browse">More</router-link>
+        </div>
       </div>
       <ul>
         <li v-for="(item, index) in listbyRate.slice(0, 8)" :key="index">
