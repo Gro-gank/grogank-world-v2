@@ -1,5 +1,5 @@
 <template>
-  <header class="flex h-14 bg-[#2a2a2a]">
+  <header class="flex h-14 bg-[#2a2a2a] z-[500]">
     <div class="left-side-header flex gap-8 sm:w-[67%]">
       <router-link to="/">
         <div class="logo py-3 pl-2 text-[1.5rem] sm:w-[100%] font-bold">
