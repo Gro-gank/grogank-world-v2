@@ -13,7 +13,7 @@
         </ul>
       </div>
     </div>
-    <div class="right-side-header sm:w-[33%] my-auto">
+    <div class="right-side-header sm:w-[33%] my-auto z-[500]">
       <div class="flex text-right">
         <div class="sm:w-[65%] md:w-[90%] my-auto pr-8">
           <h1
@@ -26,7 +26,7 @@
               class="sm:hidden md:inline-block text-sm"
             ></ion-icon>
             <div
-              class="header-list-lg hidden absolute w-[10rem] right-[4rem] top-[2.5rem] bg-[#2a2a2a] rounded-sm z-[500]"
+              class="header-list-lg hidden absolute w-[10rem] right-[4rem] top-[2.5rem] bg-[#2a2a2a] rounded-sm"
             >
               <ul class="py-2 pt-6 grid gap-2 text-center">
                 <li>
