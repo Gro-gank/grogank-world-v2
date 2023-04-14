@@ -4,7 +4,7 @@
       {{ item[0].name }}
     </h1>
     <div
-      class="w-[30%] flex justify-between text-[1.2rem] items-center sm:mx-auto md:mx-0"
+      class="w-[50%] flex justify-between text-[1.2rem] items-center sm:mx-auto md:mx-0"
     >
       <div>
         <ion-icon name="eye-outline" class="text-[1.5rem]"></ion-icon
