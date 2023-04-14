@@ -26,7 +26,7 @@
               class="sm:hidden md:inline-block text-sm"
             ></ion-icon>
             <div
-              class="header-list-lg hidden absolute w-[10rem] right-[4rem] top-[2.5rem] bg-[#2a2a2a] rounded-sm"
+              class="header-list-lg hidden absolute w-[10rem] right-[4rem] top-[2.5rem] bg-[#2a2a2a] rounded-sm z-[500]"
             >
               <ul class="py-2 pt-6 grid gap-2 text-center">
                 <li>
