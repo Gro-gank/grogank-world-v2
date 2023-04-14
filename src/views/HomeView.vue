@@ -1,5 +1,5 @@
 <template>
-  <the-banner-2></the-banner-2>
+  <the-banner></the-banner>
   <popular-banner></popular-banner>
   <on-sale-swiper></on-sale-swiper>
   <new-release></new-release>
@@ -11,7 +11,7 @@
 
 <script>
 import PopularBanner from "@/components/mainpage/PopularBanner.vue";
-import TheBanner2 from "@/components/mainpage/TheBanner2.vue";
+import TheBanner from "@/components/mainpage/TheBanner.vue";
 import OnSaleSwiper from "@/components/mainpage/OnSaleSwiper.vue";
 import NewRelease from "@/components/mainpage/NewRelease.vue";
 import MainPageList from "@/components/mainpage/MainPageList.vue";
@@ -25,7 +25,7 @@ export default {
   name: "HomeView",
   components: {
     PopularBanner,
-    TheBanner2,
+    TheBanner,
     OnSaleSwiper,
     NewRelease,
     MainPageList,
