@@ -1,6 +1,6 @@
 <template>
   <div
-    class="login absolute w-full h-full left-0 top-0 bottom-0 right-0 flex z-50 overflow-hidden text-center justify-center items-center"
+    class="login absolute w-full h-full left-0 top-0 bottom-0 right-0 flex z-[500] overflow-hidden text-center justify-center items-center"
   >
     <img
       src="images/bg5.png"
