@@ -65,7 +65,7 @@
     <ul class="grid relative gap-y-8 py-6 text-center">
       <li v-if="user[0]">{{ user[0].firstName }} {{ user[0].lastName }}</li>
       <li v-if="user[0]">
-        <router-link to="/account/{{profile}}">Account</router-link>
+        <router-link to="/account">Account</router-link>
       </li>
       <li v-else><router-link to="/login">Log In</router-link></li>
       <li><router-link to="/browse">Discover Store</router-link></li>
